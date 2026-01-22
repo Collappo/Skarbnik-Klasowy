@@ -1,12 +1,15 @@
 {
   "name": "skarbnikcounter",
+  "homepage": "https://collappo.github.io/Skarbnik-Klasowy-Test/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react-dom": "^19.2.3",
